@@ -1,0 +1,140 @@
+div.landing {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 150px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  color: white;
+  background: url("../images/bg-pattern.png"), $theme-dark-blue;
+  background: url("../images/bg-pattern.png"),
+    -webkit-linear-gradient(to left, $theme-dark-blue, $theme-dark);
+  background: url("../images/bg-pattern.png"),
+    linear-gradient(to left, $theme-dark-blue, $theme-dark);
+
+  h1,
+  h2,
+  div {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+
+    span {
+      color: $theme-accent;
+    }
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  @media (min-width: 992px) {
+    height: 100vh;
+    min-height: 775px;
+    padding-top: 0;
+    padding-bottom: 0;
+    .header-content {
+      margin-bottom: 0;
+
+      text-align: left;
+      h1 {
+        font-size: 50px;
+      }
+    }
+    .device-container {
+      max-width: 325px;
+    }
+  }
+
+  .mouseSpan {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+
+    transform: translateX(-50%);
+    cursor: pointer;
+
+    @media only screen and (max-width: 700px) {
+      display: none;
+    }
+
+    &:hover {
+      & rect {
+        stroke: lighten($theme-accent, 20%);
+      }
+
+      & circle {
+        fill: lighten($theme-accent, 20%);
+      }
+    }
+
+    .mouseIcon {
+      max-width: 2.5rem;
+      width: 100%;
+      height: auto;
+    }
+
+    rect {
+      transition: stroke 0.4s;
+      stroke: $theme-accent;
+      stroke-width: 3;
+    }
+
+    @keyframes mouse-animation {
+      0%,
+      20% {
+        transform: translateY(0) scaleY(1);
+      }
+
+      10% {
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateY(36px) scaleY(2);
+        opacity: 0.01;
+      }
+    }
+
+    circle {
+      transition: fill 0.4s;
+      animation: mouse-animation;
+      animation-duration: 1.5s;
+      animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+      animation-iteration-count: infinite;
+      transform-origin: 50% 20.5px;
+      will-change: transform;
+      fill: $theme-accent;
+    }
+  }
+}
+
+ul.list-social {
+  margin-bottom: 0;
+  li {
+    a {
+      font-size: 40px;
+      line-height: 80px;
+      display: block;
+      padding: 20px;
+      color: white;
+      border-radius: 100%;
+    }
+  }
+}
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-inline-item {
+  display: inline-block;
+}

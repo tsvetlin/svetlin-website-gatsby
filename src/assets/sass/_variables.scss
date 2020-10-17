@@ -1,0 +1,18 @@
+$theme-primary: #fdcc52;
+$theme-secondary: #7b4397;
+$theme-tertiary: #dc2430;
+
+$theme-dark: #1f1641;
+$theme-dark-blue: #012172;
+$theme-blue: #0486db;
+$theme-light-blue: #05acd3;
+$theme-accent: #bbbf95;
+
+$theme-accent-secondary: #e31b6d;
+
+$gray-base: #000;
+$gray-darker: lighten($gray-base, 13.5%); // #222
+$gray-dark: lighten($gray-base, 20%); // #333
+$gray: lighten($gray-base, 33.5%); // #555
+$gray-light: lighten($gray-base, 46.7%); // #777
+$gray-lighter: lighten($gray-base, 93.5%); // #eee

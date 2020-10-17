@@ -1,0 +1,30 @@
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  @include body-font;
+}
+
+a {
+  color: $theme-accent;
+  @include transition-all;
+  &:hover,
+  &:focus {
+    color: darken($theme-accent, 10%);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+span {
+  @include heading-font;
+}
