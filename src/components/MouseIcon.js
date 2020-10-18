@@ -4,6 +4,7 @@ const MouseIcon = ({ onClick }) => {
   return (
     <div
       role="button"
+      aria-label="mouse icon"
       className="mouseSpan"
       onClick={onClick}
       onKeyDown={onClick}

@@ -44,7 +44,7 @@ export default function About() {
 
       <div className="feature-technologies">
         <div className="feature-technologies-description">
-          <img src={HexagonImage} alt=""></img>
+          <img src={HexagonImage} alt="Svetlin"></img>
           <div className="bio">
             I work as a Systems Engineer for{" "}
             <span>

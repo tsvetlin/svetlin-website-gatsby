@@ -6,5 +6,12 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: ["gatsby-plugin-sass"],
+  siteMetadata: {
+    siteUrl: "https://szvetlin.hu",
+  },
+  plugins: [
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-robots-txt`,
+  ],
 }
