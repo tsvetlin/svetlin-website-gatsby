@@ -16,6 +16,7 @@ a {
   &:focus {
     color: darken($theme-accent, 10%);
   }
+  text-decoration: none;
 }
 
 h1,

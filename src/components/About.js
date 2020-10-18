@@ -45,15 +45,40 @@ export default function About() {
       <div className="feature-technologies">
         <div className="feature-technologies-description">
           <img src={HexagonImage} alt=""></img>
-          <div>I am using and developing in the following technologies:</div>
-          <div>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
+          <div className="bio">
+            I work as a Systems Engineer for{" "}
+            <span>
+              <a href="http://aitia.ai">AITIA</a>
+            </span>{" "}
+            in Budapest, Hungary. I create JavaScript based applications and
+            websites. My research interests reside in the field of Industrial
+            IoT, Service Oriented Architectures and Management Solutions. In the
+            last two years I am actively involved in European projects (
+            <span>
+              <a href="https://productive40.eu/">Productive4.0</a>
+            </span>
+            ,{" "}
+            <span>
+              <a href="https://www.arrowhead.eu/arrowheadtools">
+                Arrowhead Tools
+              </a>
+            </span>
+            ) either as Work Package leader or Task Leader and I am a member of
+            the Management Committee. I also oversee the development of the{" "}
+            <span>
+              <a href="https://arrowhead.eu/arrowheadframework/this-is-it">
+                Arrowhead Framework
+              </a>
+            </span>
+            .
           </div>
         </div>
-        <TechnologyList />
+        <div className="technology-list-container">
+          <div className="tech-into">
+            I am using and developing in the following technologies:
+          </div>
+          <TechnologyList />
+        </div>
       </div>
     </div>
   )

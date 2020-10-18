@@ -1,5 +1,8 @@
 .about {
+  background-color: $theme-grey;
+  padding-top: 3rem;
   h3 {
+    margin-top: 0;
     text-align: center;
     font-size: 3rem;
   }
@@ -7,14 +10,13 @@
   .feature-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-bottom: 2rem;
     .feature {
       display: flex;
       align-items: center;
       text-align: center;
       flex-direction: column;
-      background-color: yellow;
 
       &-title {
         font-size: 1.5rem;
@@ -34,10 +36,11 @@
   }
 
   .feature-technologies {
-    background-color: royalblue;
+    margin-top: 3rem;
+
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 
     &-description {
@@ -45,17 +48,39 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background-color: red;
+    }
+
+    .bio {
+      line-height: 1.5rem;
+      text-align: center;
+      width: 50%;
+      margin: 3rem;
+
+      a {
+        color: $theme-blue;
+      }
+    }
+
+    .technology-list-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      .tech-into {
+        width: 50%;
+      }
     }
 
     .technology-list {
+      margin-top: 1.5rem;
       display: flex;
       flex-direction: column;
-      background-color: seagreen;
     }
   }
 
   .technology-list {
+    padding: 0;
     list-style-type: none;
     &-item {
       &-wrapper {
@@ -73,8 +98,12 @@
           background-color: $theme-dark-blue;
         }
         &-since {
-          text-align: left;
-          padding-left: 20px;
+          background-color: $theme-light-blue;
+          text-align: center;
+          padding: 10px;
+          width: 100px;
+          color: $theme-dark-blue;
+          margin-left: 20px;
         }
       }
     }
@@ -83,16 +112,23 @@
   @media (max-width: 992px) {
     .feature-container {
       flex-direction: column;
-      .feature {
-        background-color: red;
-      }
     }
 
     .feature-technologies {
       flex-direction: column;
 
       img {
-        width: 80%;
+        width: 60%;
+      }
+
+      .bio {
+        width: 75%;
+      }
+
+      .technology-list-container {
+        .tech-into {
+          width: 75%;
+        }
       }
     }
   }

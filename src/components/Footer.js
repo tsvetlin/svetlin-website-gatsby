@@ -12,7 +12,7 @@ export default function Footer() {
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+        <path d="M0 0 L50 100 L100 0 Z" fill="#f0f0f0" stroke="#f0f0f0"></path>
       </svg>
       <SocialLinks />
       <p>

@@ -29,7 +29,15 @@ export default class Header extends Component {
       <header id="header">
         <div className="header-container">
           <Link to="/">Home</Link>
-          <div>
+        </div>
+        <div className="separator" />
+      </header>
+    )
+  }
+}
+
+/**
+ *  <div>
             <span>Svetlin:</span>
             <Link to="/makes">Makes</Link>
             <Link to="/codes">Codes</Link>
@@ -37,9 +45,4 @@ export default class Header extends Component {
             <Link to="/trains">Trains</Link>
             <Link to="/drinks">Drinks</Link>
           </div>
-        </div>
-        <div className="separator" />
-      </header>
-    )
-  }
-}
+ */
