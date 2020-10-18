@@ -5,6 +5,7 @@ export default function SocialLinks() {
     <ul className="list-inline list-social">
       <li key="github.com" className="list-inline-item">
         <a
+          aria-label="GitHub"
           href="https://github.com/tsvetlin"
           target="_blank"
           rel="noopener noreferrer"
@@ -14,6 +15,7 @@ export default function SocialLinks() {
       </li>
       <li key="https://github.com/tsvetlin" className="list-inline-item">
         <a
+          aria-label="E-mail"
           href="https://github.com/tsvetlin"
           target="_blank"
           rel="noopener noreferrer"
