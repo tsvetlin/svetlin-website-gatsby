@@ -11,7 +11,7 @@ import Image from "../assets/images/hexagon-porto-cropped.png"
 export default function Home() {
   const SEO = {
     author: "Svetlin Tanyi",
-    title: "Svetlin's website",
+    title: "Svetlin Tanyi",
     description: "Svetlin's portfolio and hobby contents",
     keywords: "site, web, portfolio, hobby",
     type: "website",
@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <div>
       <Helmet
-        title="Svetlin's website"
+        title={SEO.title}
         meta={[
           { name: "description", content: SEO.description },
           {

@@ -71,6 +71,10 @@ div.landing {
       }
     }
 
+    &:focus {
+      outline: none;
+    }
+
     .mouseIcon {
       max-width: 2.5rem;
       width: 100%;

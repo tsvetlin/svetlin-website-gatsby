@@ -53,7 +53,7 @@ export default function About() {
             in Budapest, Hungary. I create JavaScript based applications and
             websites. My research interests reside in the field of Industrial
             IoT, Service Oriented Architectures and Management Solutions. In the
-            last two years I am actively involved in European projects (
+            last three years I am actively involved in European projects (
             <span>
               <a href="https://productive40.eu/">Productive4.0</a>
             </span>
@@ -67,7 +67,7 @@ export default function About() {
             the Management Committee. I also oversee the development of the{" "}
             <span>
               <a href="https://arrowhead.eu/arrowheadframework/this-is-it">
-                Arrowhead Framework
+               Eclipse Arrowhead Framework
               </a>
             </span>
             .
