@@ -7,11 +7,18 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    siteUrl: "https://szvetlin.hu",
+    siteUrl: "https://svetlin.eu",
   },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-robots-txt`,
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        host: 'https://svetlin.eu',
+        sitemap: 'https://svetlin.eu/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
   ],
 }
