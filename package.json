@@ -17,7 +17,7 @@
     "gatsby": "^2.24.68",
     "gatsby-plugin-react-helmet": "^3.3.14",
     "gatsby-plugin-robots-txt": "^1.5.3",
-    "gatsby-plugin-sass": "^2.2.0",
+    "gatsby-plugin-sass": "^2.3.17",
     "node-sass": "^4.13.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
