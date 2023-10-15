@@ -46,31 +46,12 @@ export default function About() {
         <div className="feature-technologies-description">
           <img src={HexagonImage} alt="Svetlin"></img>
           <div className="bio">
-            I work as a Systems Engineer for{" "}
+            I work as a Fullstack Software Engineer for{" "}
             <span>
-              <a href="http://aitia.ai">AITIA</a>
+              <a href="https://artera.io/">Artera</a>
             </span>{" "}
-            in Budapest, Hungary. I create JavaScript based applications and
-            websites. My research interests reside in the field of Industrial
-            IoT, Service Oriented Architectures and Management Solutions. In the
-            last three years I am actively involved in European projects (
-            <span>
-              <a href="https://productive40.eu/">Productive4.0</a>
-            </span>
-            ,{" "}
-            <span>
-              <a href="https://www.arrowhead.eu/arrowheadtools">
-                Arrowhead Tools
-              </a>
-            </span>
-            ) either as Work Package leader or Task Leader and I am a member of
-            the Management Committee. I also oversee the development of the{" "}
-            <span>
-              <a href="https://arrowhead.eu/arrowheadframework/this-is-it">
-               Eclipse Arrowhead Framework
-              </a>
-            </span>
-            .
+            in Budapest, Hungary. I work on a healthcare communication platform
+            together with US based colleagues.
           </div>
         </div>
         <div className="technology-list-container">
